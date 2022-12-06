@@ -10,7 +10,6 @@ function Hello() {
     const [text2, setText2] = useState("");
     const [text3, setText3] = useState("");
 
-
     useEffect(() => {
       const timeout = setTimeout(() => {
         setText1(first_text.slice(0, text1.length + 1));
