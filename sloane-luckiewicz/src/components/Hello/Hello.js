@@ -1,16 +1,8 @@
-import styles from "./styles.module.css";
-import {React, useState, useEffect} from "react";
+import {useState, useEffect} from "react";
+import { wait } from "../../Helpers/wait";
 
-export const Hello = () => {
+export const Hello = (message) => {
     const[typedMessage, setTypedMessage]= useState(' ');
-    const message = 'Hello my name is Sloane';
-
-    const wait = ms => 
-        new Promise(resolve => {
-            setTimeout(() => {
-                resolve();
-            }, ms);
-        });
 
         useEffect(() => {
             setTypedMessage('');
@@ -29,11 +21,6 @@ export const Hello = () => {
     
         }, [message]);
 
-  return (
-    <div className={styles.main}>
-        <span className={styles.message}>
-          <div>{typedMessage}</div>
-        </span>
-    </div>
-  );
+    return typedMessage;
+  
 }
