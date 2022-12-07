@@ -1,47 +1,39 @@
 import styles from "./styles.module.css";
 import {React, useState, useEffect} from "react";
 
-function Hello() {
-    const first_text = "Hello!";
-    const second_text = "My name is Sloane Luckiewicz";
-    const third_text = "and this is my portfolio.";
-  
-    const [text1, setText1] = useState("");
-    const [text2, setText2] = useState("");
-    const [text3, setText3] = useState("");
+export const Hello = () => {
+    const[typedMessage, setTypedMessage]= useState(' ');
+    const message = 'Hello my name is Sloane';
 
-    useEffect(() => {
-      const timeout = setTimeout(() => {
-        setText1(first_text.slice(0, text1.length + 1));
-      }, 200);
-      return () => clearTimeout(timeout);
-    }, [text1]);
-  
-    useEffect(() => {
-      const timeout = setTimeout(() => {
-        setText2(second_text.slice(0, text2.length + 1));
-      }, 100);
-  
-      return () => clearTimeout(timeout);
-    }, [text2]);
-  
-    useEffect(() => {
-      const timeout = setTimeout(() => {
-        setText3(third_text.slice(0, text3.length + 1));
-      }, 100);
-  
-      return () => clearTimeout(timeout);
-    }, [text3]);
+    const wait = ms => 
+        new Promise(resolve => {
+            setTimeout(() => {
+                resolve();
+            }, ms);
+        });
+
+        useEffect(() => {
+            setTypedMessage('');
+    
+            if (message.length) {
+                (async () => {
+                    let visibleMessage = '';
+    
+                    for (let i = 0; i < message.length; i++){
+                        await wait(75);
+                        visibleMessage = visibleMessage + message[i];
+                        setTypedMessage(visibleMessage)
+                    }
+                })();
+            }
+    
+        }, [message]);
 
   return (
     <div className={styles.main}>
         <span className={styles.message}>
-          <div>{text1}</div>
-          <div>{text2}</div>
-          <div>{text3}</div>
+          <div>{typedMessage}</div>
         </span>
     </div>
   );
 }
-
-export default Hello;
