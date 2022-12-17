@@ -1,3 +1,7 @@
+/*
+thoughts: use this as the component with message as state
+use introduction as component to change the state
+*/
 import { Hello } from './Hello';
 
 export const UseHello = ({ message }) => {
