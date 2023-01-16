@@ -1,8 +1,4 @@
-.main {
-  height: 100vh;
-  }
-  
-  .startButton {
+.startButton {
     border: none;
     outline: none;
     padding: 15px;
@@ -11,5 +7,5 @@
     border-radius: 5px;
     background-color: white;
     box-shadow: 0px 0px 3px gray;
-  }
+}
   
