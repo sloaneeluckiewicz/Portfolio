@@ -11,15 +11,8 @@
 
 .flexContainer {
     display: flex;
-    gap: 50%;
-    flex-direction: row;
-    flex-wrap: wrap;
+    
+    flex-direction: column;
 }
 
-h1 {
-    text-align: center;
-}
 
-p {
-    display: block;
-}

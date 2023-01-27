@@ -12,7 +12,19 @@ export const StartMenu = ({ onStartClick }) => {
                 <h3>Hello, my name is</h3>
                 <h1>Sloane Luckiewicz</h1>
                 <body>
-                    <p>USC B.S. IIT</p>
+                    <p>
+                        I graduated from the University of South Carolina with a B.S. in Integrated Information Technology
+                        and a leadership distinction in Professional and Civic Engagement. I enjoy front-end development and cybersecurity. 
+                    </p>
+                    <p> 
+                        When I am not programming my hobbies include:
+                        <ul>
+                            <li>yoga</li>
+                            <li>gymnastics</li>
+                            <li>reading</li>
+                            <li>meditating</li>
+                        </ul>
+                    </p>
                 </body>
                     <button className={styles.startButton} onClick={onStartClick}>
                         Click to see my projects!
