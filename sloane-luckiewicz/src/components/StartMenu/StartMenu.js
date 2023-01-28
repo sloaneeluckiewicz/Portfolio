@@ -1,6 +1,5 @@
 import styles from './styles.module.css';
 
-
 export const StartMenu = ({ onStartClick }) => {
     return (
     <body>
@@ -13,22 +12,26 @@ export const StartMenu = ({ onStartClick }) => {
                 <h1>Sloane Luckiewicz</h1>
                 <body>
                     <p>
-                        I graduated from the University of South Carolina with a B.S. in Integrated Information Technology
-                        and a leadership distinction in Professional and Civic Engagement. I enjoy front-end development and cybersecurity. 
+                        Graduated from the University of South Carolina with a B.S. in Integrated Information Technology
+                        and a leadership distinction in Professional and Civic Engagement. 
+                        Apsiring web developer while implementing the best security protocols. 
                     </p>
                     <p> 
-                        When I am not programming my hobbies include:
+                        Check me out:
                         <ul>
-                            <li>yoga</li>
-                            <li>gymnastics</li>
-                            <li>reading</li>
-                            <li>meditating</li>
+                            <li><a href="https://drive.google.com/file/d/1Q1ochgQYGj9lDQb7rcfOiw1tiyYQ006t/view?usp=sharing">Resume</a></li>
+                            <li><a href="https://www.linkedin.com/in/sloane-luckiewicz/">LinkedIn</a></li>
+                            <li><a href="https://github.com/sloaneeluckiewicz">GitHub</a></li>
+                            <li><a href="https://sloaneluckiewicz.wixsite.com/sloaneeluckiewicz">Graduation with Leadership Distinction (GLD)</a></li>
+                            <li><a href="https://www.credly.com/users/sloane-luckiewicz.8985866f/badges">Certifications</a></li>
                         </ul>
                     </p>
                 </body>
+                <footer>
                     <button className={styles.startButton} onClick={onStartClick}>
-                        Click to see my projects!
-                    </button> 
+                        Click to read about me!
+                    </button>
+                </footer> 
             </div>
         </main>
     </body>

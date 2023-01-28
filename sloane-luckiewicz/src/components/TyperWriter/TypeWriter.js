@@ -2,13 +2,13 @@
 import { useState } from 'react';
 import { Announcer } from '../Announcer/Announcer';
 
-export const Introduction = () => {
+export const TypeWriter = () => {
     const [announcerMessage, setAnnouncerMessage] = useState(''); 
     return (
         <div>
             <Announcer
                 message = {
-                   announcerMessage || 'Hello! My name is Sloane Luckiewicz!'
+                   announcerMessage || 'Fun facts about me :)'
                 }
             />
         </div>   

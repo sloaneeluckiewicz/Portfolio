@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export const useIntroduction = sequence => {
+export const useTypeWriter = sequence => {
     const [turn, setTurn] = useState(0);
     const [inSequence, setInSequence]= useState(false);
     const [announcerMessage, setAnnouncerMessage] = useState(''); 
