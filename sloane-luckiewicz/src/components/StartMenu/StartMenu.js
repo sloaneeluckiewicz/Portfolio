@@ -6,8 +6,8 @@ import grad7 from '../../images/grad7.JPG'
 
 export const StartMenu = ({ onStartClick }) => {
     return (
-    <content>
-        <main className={styles.flexContainer}>
+    <content className={styles.flexContainer}>
+        <main>
             <div>
                 <img src={grad3} alt="Me in gown in front of pink flowers." className={styles.images}/>
                 <img src={grad6} alt="Me in front of WillyB." className={styles.images}/>
@@ -16,33 +16,36 @@ export const StartMenu = ({ onStartClick }) => {
             </div>
             <div className={styles.content}>
                 <header>
-                    <h3>Hello, my name is</h3>
+                    <h2>Hello, my name is...</h2>
                     <h1>Sloane Luckiewicz</h1>
                 </header>
                 <body>
-                    <p>
-                        I recently graduated from the University of South Carolina in December of 2022. I obtained a B.S. in Integrated Information Technology 
-                        with a leadership distinction in Professional and Civic Engagement. I love to work with front-end programming languages like 
-                        HTML, CSS, JavaScript, React JS. I am extremely passionate about all things technology and aspire to be a front-end web developer while
-                        incorporating the best security practices and protocols. Right now my tech obsession is learning about white hat hackers.
+                    <p className={styles.paragraph}>
+                        I recently graduated from the University of South Carolina in December of 2022. I obtained a <span style={{ fontWeight: 'bold' }} >B.S. in Integrated Information Technology </span> 
+                        with a leadership distinction in <span style={{ fontWeight: 'bold' }}> Professional and Civic Engagement</span>. I love to work with front-end programming languages like 
+                        <span style={{fontWeight: 'bold' }}> HTML, CSS, JavaScript, React JS</span>. I am extremely passionate about all things technology and aspire to be a front-end web developer while
+                        incorporating the best security practices and protocols. Right now my tech obsession is learning about <span style={{fontWeight: 'bold' }}>white hat hackers</span>.
                     </p>
-                    <p> 
-                        Check me out:
-                        <ul>
-                            <li><a href="https://drive.google.com/file/d/1Q1ochgQYGj9lDQb7rcfOiw1tiyYQ006t/view?usp=sharing">Resume</a></li>
-                            <li><a href="https://www.linkedin.com/in/sloane-luckiewicz/">LinkedIn</a></li>
-                            <li><a href="https://github.com/sloaneeluckiewicz">GitHub</a></li>
-                            <li><a href="https://sloaneluckiewicz.wixsite.com/sloaneeluckiewicz">Graduation with Leadership Distinction (GLD)</a></li>
-                            <li><a href="https://www.credly.com/users/sloane-luckiewicz.8985866f/badges">Certifications</a></li>
-                        </ul>
-                    </p>
+                    <div>
+                        <p className={styles.links}>
+                            Check me out:
+                            <ul>
+                                <li><a href="https://drive.google.com/file/d/1Q1ochgQYGj9lDQb7rcfOiw1tiyYQ006t/view?usp=sharing">Resume</a></li>
+                                <li><a href="https://www.linkedin.com/in/sloane-luckiewicz/">LinkedIn</a></li>
+                                <li><a href="https://github.com/sloaneeluckiewicz">GitHub</a></li>
+                                <li><a href="https://sloaneluckiewicz.wixsite.com/sloaneeluckiewicz">Graduation with Leadership Distinction (GLD)</a></li>
+                                <li><a href="https://www.credly.com/users/sloane-luckiewicz.8985866f/badges">Certifications</a></li>
+                            </ul>
+                        </p>
+                        <button className={styles.startButton} onClick={onStartClick}>
+                            Click to read about me!
+                        </button>
+                    </div> 
                 </body>  
             </div>
         </main>
         <footer>
-            <button className={styles.startButton} onClick={onStartClick}>
-                Click to read about me!
-            </button>
+            contact me
         </footer> 
     </content>
     );
