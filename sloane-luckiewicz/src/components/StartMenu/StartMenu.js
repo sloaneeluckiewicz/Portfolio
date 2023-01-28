@@ -1,20 +1,30 @@
 import styles from './styles.module.css';
+import grad1 from '../../images/grad1.JPG'
+import grad3 from '../../images/grad3.JPG'
+import grad6 from '../../images/grad6.JPG'
+import grad7 from '../../images/grad7.JPG'
 
 export const StartMenu = ({ onStartClick }) => {
     return (
-    <body>
+    <content>
         <main className={styles.flexContainer}>
             <div>
-                <p>This is my slideshow</p>
+                <img src={grad3} alt="Me in gown in front of pink flowers." className={styles.images}/>
+                <img src={grad6} alt="Me in front of WillyB." className={styles.images}/>
+                <img src={grad7} alt="Me in jersey in front of fountain." className={styles.images}/>
+                <img src={grad1} alt="Me in front of Swearingen." className={styles.images}/>
             </div>
-            <div>
-                <h3>Hello, my name is</h3>
-                <h1>Sloane Luckiewicz</h1>
+            <div className={styles.content}>
+                <header>
+                    <h3>Hello, my name is</h3>
+                    <h1>Sloane Luckiewicz</h1>
+                </header>
                 <body>
                     <p>
-                        Graduated from the University of South Carolina with a B.S. in Integrated Information Technology
-                        and a leadership distinction in Professional and Civic Engagement. 
-                        Apsiring web developer while implementing the best security protocols. 
+                        I recently graduated from the University of South Carolina in December of 2022. I obtained a B.S. in Integrated Information Technology 
+                        with a leadership distinction in Professional and Civic Engagement. I love to work with front-end programming languages like 
+                        HTML, CSS, JavaScript, React JS. I am extremely passionate about all things technology and aspire to be a front-end web developer while
+                        incorporating the best security practices and protocols. Right now my tech obsession is learning about white hat hackers.
                     </p>
                     <p> 
                         Check me out:
@@ -26,43 +36,15 @@ export const StartMenu = ({ onStartClick }) => {
                             <li><a href="https://www.credly.com/users/sloane-luckiewicz.8985866f/badges">Certifications</a></li>
                         </ul>
                     </p>
-                </body>
-                <footer>
-                    <button className={styles.startButton} onClick={onStartClick}>
-                        Click to read about me!
-                    </button>
-                </footer> 
+                </body>  
             </div>
         </main>
-    </body>
+        <footer>
+            <button className={styles.startButton} onClick={onStartClick}>
+                Click to read about me!
+            </button>
+        </footer> 
+    </content>
     );
 };
 
-
-/*
-
-<button className={styles.startButton} onClick={onStartClick}>
-    Click to see my projects!
-</button> 
-
-import { Introduction } from '../Introduction/Introduction';
-import styles from './styles.module.css';
-
-
-export const StartMenu = ({ onStartClick }) => {
-    return (
-    <div>
-        <aside>
-            <img src='../images/portfoliopic.jpg' alt = ' me sitting down' />
-        </aside>
-        <main>
-            <Introduction />
-        <button className={styles.startButton} onClick={onStartClick}>
-                Click to see my projects!
-        </button> 
-        </main>
-        
-    </div>
-    );
-};
-*/

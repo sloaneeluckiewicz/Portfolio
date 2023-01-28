@@ -22,7 +22,7 @@ export const About = ({ onAboutClick }) => {
                     </p>
                 </body>
                 <aside>
-                    <p>images of things like family and animals</p>
+                    <p>this is my slideshow</p>
                 </aside>
                 <footer>
                     <button className={styles.startButton} onClick={onAboutClick}>
