@@ -1,8 +1,8 @@
 import styles from './styles.module.css';
-import grad1 from '../../images/grad1.JPG'
-import grad3 from '../../images/grad3.JPG'
-import grad6 from '../../images/grad6.JPG'
-import grad7 from '../../images/grad7.JPG'
+import grad1 from '../../images/grad1.JPG';
+import grad3 from '../../images/grad3.JPG';
+import grad6 from '../../images/grad6.JPG';
+import grad7 from '../../images/grad7.JPG';
 
 export const StartMenu = ({ onStartClick }) => {
     return (
@@ -37,7 +37,7 @@ export const StartMenu = ({ onStartClick }) => {
                                 <li><a href="https://www.credly.com/users/sloane-luckiewicz.8985866f/badges">Certifications</a></li>
                             </ul>
                         </p>
-                        <button className={styles.startButton} onClick={onStartClick}>
+                        <button className={styles.button56} onClick={onStartClick}>
                             Click to read about me!
                         </button>
                     </div> 
@@ -50,4 +50,5 @@ export const StartMenu = ({ onStartClick }) => {
     </content>
     );
 };
+
 
