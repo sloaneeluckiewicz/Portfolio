@@ -13,10 +13,10 @@ export default function Navbar() {
             <a href='StartMenu.js'>Home</a>
           </li>
           <li>
-            <a href='/About.js'>About</a>
+            <a href='About.js'>About</a>
           </li>
           <li>
-            <a href='/Projects.js'>Projects</a>
+            <a href='Projects.js'>Projects</a>
           </li>
         </ul>
       </div>
