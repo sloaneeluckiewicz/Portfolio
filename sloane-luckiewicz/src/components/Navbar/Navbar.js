@@ -10,13 +10,13 @@ export default function Navbar() {
         className={styles.menu}>
         <ul>
           <li>
-            <a href="/home">Home</a>
+            <a href='StartMenu.js'>Home</a>
           </li>
           <li>
-            <a href="/about">About</a>
+            <a href='/About.js'>About</a>
           </li>
           <li>
-            <a href="/projects">Projects</a>
+            <a href='/Projects.js'>Projects</a>
           </li>
         </ul>
       </div>
