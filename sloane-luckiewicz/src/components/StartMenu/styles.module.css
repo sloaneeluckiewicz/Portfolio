@@ -5,56 +5,23 @@
     border-radius: 8px;
     box-sizing: border-box;
     color: #111;
-    cursor: pointer;
-    display: flex;
-    font-family: Inter,sans-serif;
     font-size: 16px;
     height: 48px;
     justify-content: center;
     line-height: 24px;
     max-width: 100%;
     padding: 0 25px;
-    position: relative;
     text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-  }
-  
-  .button56:after {
-    background-color: #111;
-    border-radius: 8px;
-    content: "";
-    display: block;
-    height: 48px;
-    left: 0;
-    width: 100%;
-    position: absolute;
-    top: -2px;
-    transform: translate(8px, 8px);
-    transition: transform .2s ease-out;
-    z-index: -1;
-  }
-  
-  .button56:hover:after {
-    transform: translate(0, 0);
-  }
-  
-  .button56:active {
-    background-color: #ffdeda;
-    outline: 0;
-  }
-  
-  .button56:hover {
-    outline: 0;
-  }
-  
-  @media (min-width: 768px) {
-    .button56 {
-      padding: 0 40px;
+    float: right;
+    margin-right: 20%;
+    margin-top: 7%;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👆</text></svg>")
+        16 0,
+        auto;
+}
+    .button56:hover{
+        background-color: #f7b0e4; 
     }
-  }
   
 
 .flexContainer {
@@ -66,6 +33,11 @@
     width: 25%;
     height: 25%;
 }
+    .images:hover {
+        cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>✨</text></svg>")
+        16 0,
+        auto;
+    }
 
 .content {
     margin: 25px;
@@ -88,4 +60,19 @@ h2 {
 .links {
     float: left;
     margin-left: 20%;
+}
+    .links a:hover{
+        color: blue;
+    }
+
+.links ul {
+    list-style: "✔"; 
+}
+
+.links ul li {
+    padding: 1.5%;
+}
+
+a {
+    color: black;
 }

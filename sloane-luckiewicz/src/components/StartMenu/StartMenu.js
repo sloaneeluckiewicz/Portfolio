@@ -28,7 +28,7 @@ export const StartMenu = ({ onStartClick }) => {
                     </p>
                     <div>
                         <p className={styles.links}>
-                            Check me out:
+                            <h3>Check me out:</h3>
                             <ul>
                                 <li><a href="https://drive.google.com/file/d/1Q1ochgQYGj9lDQb7rcfOiw1tiyYQ006t/view?usp=sharing">Resume</a></li>
                                 <li><a href="https://www.linkedin.com/in/sloane-luckiewicz/">LinkedIn</a></li>
@@ -38,7 +38,7 @@ export const StartMenu = ({ onStartClick }) => {
                             </ul>
                         </p>
                         <button className={styles.button56} onClick={onStartClick}>
-                            Click to read about me!
+                            Click for some fun facts!
                         </button>
                     </div> 
                 </body>  
@@ -50,5 +50,4 @@ export const StartMenu = ({ onStartClick }) => {
     </content>
     );
 };
-
 
