@@ -1,6 +1,6 @@
 import styles from './styles.module.css';
 import { TypeWriter } from '../TyperWriter/TypeWriter';
-import { Slideshow } from '../Slideshow/Slideshow';
+import { Slideshow } from '../Slideshow/Slideshow'; 
 
 export const About = ({ onAboutClick }) => {
     return (
@@ -8,9 +8,11 @@ export const About = ({ onAboutClick }) => {
         <main className={styles.flexContainer}>
             <div>
                 <TypeWriter />
+                <Slideshow />
             </div>
                 <body>
                     <p>
+
                         <ul className={styles.facts}>
                             <li>&#127969; I grew up outside of Pittsburgh, PA</li>
                             <li>&#128106; I am one of 5 siblings</li>
@@ -21,10 +23,6 @@ export const About = ({ onAboutClick }) => {
                         </ul>
                     </p>
                 </body>
-                <aside>
-                    <p>this is my slideshow</p>
-                    <Slideshow />
-                </aside>
                 <footer>
                     <button className={styles.aboutButton} onClick={onAboutClick}>
                         Click to view my work!

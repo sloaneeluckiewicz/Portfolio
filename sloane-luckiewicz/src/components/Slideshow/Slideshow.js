@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 const pictures = ["#00C49F", "#00C49F", "#FFBB28"];
 const delay = 2500;
 
-function Slideshow() {
+export function Slideshow() {
   const [index, setIndex] = React.useState(0);
   const timeoutRef = React.useRef(null);
 
@@ -48,7 +48,7 @@ function Slideshow() {
         {pictures.map((_, idx) => (
           <div
             key={idx}
-            className={`slideshowDot${index === idx ? " active" : ""}`}
+            className={styles.slideshowDot}
             onClick={() => {
               setIndex(idx);
             }}
@@ -59,4 +59,3 @@ function Slideshow() {
   );
 }
 
-export { Slideshow };
