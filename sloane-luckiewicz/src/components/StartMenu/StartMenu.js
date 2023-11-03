@@ -17,13 +17,13 @@ export const StartMenu = ({ onStartClick }) => {
             <div className={styles.content}>
                 <header>
                     <h2>Hello, my name is...</h2>
-                    <h1>Sloane Luckiewicz</h1>
+                    <h1 className={styles.fullName}>Sloane Luckiewicz</h1>
                 </header>
                 <body>
                     <p className={styles.paragraph}>
                         I recently graduated from the University of South Carolina in December of 2022. I obtained a <span style={{ fontWeight: 'bold' }} >B.S. in Integrated Information Technology </span> 
                         with a leadership distinction in <span style={{ fontWeight: 'bold' }}> Professional and Civic Engagement</span>. I love to work with front-end programming languages like 
-                        <span style={{fontWeight: 'bold' }}> HTML, CSS, JavaScript, React JS</span>. I am extremely passionate about all things technology and aspire to be a front-end web developer while
+                        <span style={{fontWeight: 'bold' }}> HTML, CSS, JavaScript, and React JS</span>. I am extremely passionate about all things technology and aspire to be a front-end web developer while
                         incorporating the best security practices and protocols. Right now my tech obsession is learning about <span style={{fontWeight: 'bold' }}>white hat hackers</span>.
                     </p>
                     <div>

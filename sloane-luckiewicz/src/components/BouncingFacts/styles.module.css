@@ -1,0 +1,12 @@
+h1 {
+    color: green;
+}
+
+canvas {
+    background-color: #F08080;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
